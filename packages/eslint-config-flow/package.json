@@ -1,0 +1,25 @@
+{
+  "name": "@vitbokisch/eslint-config-flow",
+  "version": "0.0.1",
+  "description": "Flow eslint rules",
+  "license": "MIT",
+  "repository": "https://github.com/vitbokisch/linters/tree/master/packages/eslint-config-flow",
+  "author": "Vit Bokisch <vit@bokisch.cz>",
+  "contributors": [
+    {
+      "name": "Vit Bokisch",
+      "email": "vit@bokisch.cz"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "eslint-plugin-flowtype": "^2.40.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^8.1.0",
+    "eslint": "^4.14.0"
+  }
+}
