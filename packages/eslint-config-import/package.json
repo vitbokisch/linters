@@ -1,0 +1,24 @@
+{
+  "name": "@vitbokisch/eslint-config-import",
+  "version": "0.0.1",
+  "description": "Import eslint rules",
+  "license": "MIT",
+  "repository": "https://github.com/vitbokisch/linters/tree/master/packages/eslint-config-import",
+  "author": "Vit Bokisch <vit@bokisch.cz>",
+  "contributors": [
+    {
+      "name": "Vit Bokisch",
+      "email": "vit@bokisch.cz"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.14.0"
+  }
+}
