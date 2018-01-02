@@ -18,7 +18,9 @@ module.exports = {
 
     // disallow specific globals
     // https://eslint.org/docs/rules/no-restricted-globals
-    'no-restricted-globals': ['error', 'isFinite', 'isNaN'].concat(require('./_restrictedGlobals')),
+    'no-restricted-globals': ['error', 'isFinite', 'isNaN'].concat(
+      require('eslint-restricted-globals'),
+    ),
 
     // disallow declaration of variables already declared in the outer scope
     // https://eslint.org/docs/rules/no-shadow
@@ -42,10 +44,16 @@ module.exports = {
 
     // disallow declaration of variables that are not used in the code
     // https://eslint.org/docs/rules/no-unused-vars
-    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+    'no-unused-vars': [
+      'error',
+      { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
+    ],
 
     // disallow use of variables before they are defined
     // https://eslint.org/docs/rules/no-use-before-define
-    'no-use-before-define': ['error', { functions: true, classes: true, variables: true }]
-  }
+    'no-use-before-define': [
+      'error',
+      { functions: true, classes: true, variables: true },
+    ],
+  },
 }
