@@ -3,7 +3,8 @@
   "version": "0.0.2",
   "description": "React-Native eslint rules",
   "license": "MIT",
-  "repository": "https://github.com/vitbokisch/linters/tree/master/packages/eslint-config-react-native",
+  "repository":
+    "https://github.com/vitbokisch/linters/tree/master/packages/eslint-config-react-native",
   "author": "Vit Bokisch <vit@bokisch.cz>",
   "contributors": [
     {
@@ -19,7 +20,7 @@
     "eslint-plugin-react-native": "^3.2.0"
   },
   "peerDependencies": {
-    "eslint": "^4.14.0"
+    "eslint": "*"
   },
   "publishConfig": {
     "access": "public"

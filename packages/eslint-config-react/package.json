@@ -19,7 +19,7 @@
     "eslint-plugin-react": "^7.5.0"
   },
   "peerDependencies": {
-    "eslint": "^4.14.0"
+    "eslint": "*"
   },
   "publishConfig": {
     "access": "public"

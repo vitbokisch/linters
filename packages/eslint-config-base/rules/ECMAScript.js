@@ -17,7 +17,7 @@ module.exports = {
       'error',
       'as-needed',
       {
-        requireReturnForObjectLiteral: true
+        requireReturnForObjectLiteral: false
       }
     ],
 

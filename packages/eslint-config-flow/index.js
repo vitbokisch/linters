@@ -4,6 +4,10 @@ module.exports = {
   env: {
     es6: true
   },
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  }
   settings: {
     flowtype: {
       onlyFilesWithFlowAnnotation: false

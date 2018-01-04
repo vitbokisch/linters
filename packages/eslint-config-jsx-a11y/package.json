@@ -19,7 +19,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.0"
   },
   "peerDependencies": {
-    "eslint": "^4.14.0"
+    "eslint": "*"
   },
   "publishConfig": {
     "access": "public"
