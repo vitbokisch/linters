@@ -1,6 +1,6 @@
 {
   "name": "@vitbokisch/eslint-config-flow",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Flow eslint rules",
   "license": "MIT",
   "repository": "https://github.com/vitbokisch/linters/tree/master/packages/eslint-config-flow",
