@@ -1,6 +1,6 @@
 {
   "name": "@vitbokisch/eslint-config-import",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Import eslint rules",
   "license": "MIT",
   "repository": "https://github.com/vitbokisch/linters/tree/master/packages/eslint-config-import",
