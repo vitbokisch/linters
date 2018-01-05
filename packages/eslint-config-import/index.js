@@ -12,6 +12,7 @@ module.exports = {
       node: {
         extensions: ['.js', '.jsx', '.json']
       }
+      'babel-module': {}, 
     },
     'import/extensions': ['.js', '.jsx', '.es'],
     'import/core-modules': [],
