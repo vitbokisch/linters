@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    node: true,
+    node: true
   },
 
   rules: {
@@ -46,6 +46,6 @@ module.exports = {
 
     // disallow use of synchronous methods (off by default)
     // https://eslint.org/docs/rules/no-sync
-    'no-sync': 'off',
-  },
+    'no-sync': 'off'
+  }
 }

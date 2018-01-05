@@ -16,7 +16,7 @@ module.exports = {
       'error',
       {
         elements: ['img', 'object', 'area', 'input[type="image"]'],
-        img: [],
+        img: ['Image', 'Thumbnail'],
         object: [],
         area: [],
         'input[type="image"]': []
@@ -65,7 +65,10 @@ module.exports = {
 
     // Enforce heading (h1, h2, etc) elements contain accessible content.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/heading-has-content.md
-    'jsx-a11y/heading-has-content': ['error', { components: [''] }],
+    'jsx-a11y/heading-has-content': [
+      'error',
+      { components: ['Title', 'Heading', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6'] }
+    ],
 
     // Enforce <html> element has lang prop.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/html-has-lang.md
@@ -79,6 +82,7 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md
     'jsx-a11y/img-redundant-alt': 'error',
 
+    // TODO: decide if to define any specific elements to this rule
     // Enforce that elements with interactive handlers like onClick must be focusable.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/interactive-supports-focus.md
     'jsx-a11y/interactive-supports-focus': 'error',
@@ -168,7 +172,7 @@ module.exports = {
 
     // Enforce usage of onBlur over onChange on select menus for accessibility.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
-    'jsx-a11y/no-onchange': 'off',
+    'jsx-a11y/no-onchange': 'warn',
 
     // Enforce explicit role property is not the same as implicit/default role property on element.
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-redundant-roles.md

@@ -216,7 +216,6 @@ module.exports = {
           'request', // for Express requests
           'res', // for Express responses
           'response', // for Express responses
-          '$scope', // for Angular 1 scopes
           'self' //for mobx-state-tree
         ]
       }
