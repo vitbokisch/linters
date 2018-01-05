@@ -16,10 +16,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "babel-eslint": "*",
     "eslint-plugin-flowtype": "^2.40.0"
   },
   "peerDependencies": {
-    "babel-eslint": "*",
     "eslint": "*"
   },
   "publishConfig": {
