@@ -17,7 +17,7 @@ module.exports = {
 
     // Marks Flow type identifiers as defined.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-define-flow-type
-    'flowtype/define-flow-type': 1,
+    'flowtype/define-flow-type': 'warn',
 
     // Enforces consistent use of trailing commas in Object and Tuple annotations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-delimiter-dangle
@@ -80,8 +80,7 @@ module.exports = {
     // NOTE: expected you are using flow in all your project files, so annotation is not needed
     // This rule validates Flow file annotations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-valid-file-annotation
-    'flowtype/require-valid-file-annotation': 'off,
-
+    'flowtype/require-valid-file-annotation': 'off',
     // Requires that all variable declarators have type annotations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-variable-type
     'flowtype/require-variable-type': [
@@ -94,11 +93,9 @@ module.exports = {
         }
       }
     ],
-
     // Enforces consistent use of semicolons after type aliases.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-semi
     'flowtype/semi': ['error', 'never'],
-
     // Enforces sorting of Object annotations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-sort-keys
     'flowtype/sort-keys': [
@@ -109,27 +106,21 @@ module.exports = {
         natural: true
       }
     ],
-
     // Enforces consistent spacing after the type annotation colon.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-space-after-type-colon
     'flowtype/space-after-type-colon': ['error', 'always', { allowLineBreak: false }],
-
     // Enforces consistent spacing before the opening < of generic type annotation parameters.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-space-before-generic-bracket
     'flowtype/space-before-generic-bracket': ['error', 'never'],
-
     // Enforces consistent spacing before the type annotation colon.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-space-before-type-colon
     'flowtype/space-before-type-colon': ['error', 'never'],
-
     // Enforces a consistent naming pattern for type aliases.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-type-id-match
     'flowtype/type-id-match': 'off',
-
     // Enforces consistent spacing around union and intersection type separators (| and &).
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-union-intersection-spacing
     'flowtype/union-intersection-spacing': ['error', 'always'],
-
     // Marks Flow type alias declarations as used.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-use-flow-type
     'flowtype/use-flow-type': 'warn'
