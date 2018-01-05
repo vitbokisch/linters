@@ -4,10 +4,6 @@ module.exports = {
   env: {
     es6: true
   },
-  "parserOptions": {
-    "sourceType": "module",
-    "allowImportExportEverywhere": false
-  }
   settings: {
     flowtype: {
       onlyFilesWithFlowAnnotation: false
@@ -43,9 +39,10 @@ module.exports = {
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-primitive-constructor-types
     'flowtype/no-primitive-constructor-types': 'error',
 
+    // NOTE: expected you are using flow in all your project files, so annotation is not needed
     // Disallows Flow type imports, aliases, and annotations in files missing a valid Flow file declaration (or a @noflow annotation).
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-types-missing-file-annotation
-    'flowtype/no-types-missing-file-annotation': 'error',
+    'flowtype/no-types-missing-file-annotation': 'off',
 
     // An extension of ESLint's no-unused-expressions. This rule ignores type cast expressions, but otherwise behaves the same as ESLint's no-unused-expressions.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-no-unused-expressions
@@ -80,15 +77,10 @@ module.exports = {
       }
     ],
 
+    // NOTE: expected you are using flow in all your project files, so annotation is not needed
     // This rule validates Flow file annotations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-valid-file-annotation
-    'flowtype/require-valid-file-annotation': [
-      'error',
-      'always',
-      {
-        annotationStyle: 'line'
-      }
-    ],
+    'flowtype/require-valid-file-annotation': 'off,
 
     // Requires that all variable declarators have type annotations.
     // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules-require-variable-type
