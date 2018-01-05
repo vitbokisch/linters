@@ -1,6 +1,6 @@
 {
   "name": "@vitbokisch/eslint-config-import",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Import eslint rules",
   "license": "MIT",
   "repository": "https://github.com/vitbokisch/linters/tree/master/packages/eslint-config-import",
@@ -16,9 +16,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "eslint-import-resolver-babel-module": "2.2.1",
     "eslint-plugin-import": "^2.8.0"
   },
   "peerDependencies": {
+    "babel-plugin-module-resolver": "2.7.1",
     "eslint": "*"
   },
   "publishConfig": {
