@@ -84,7 +84,7 @@ module.exports = {
 
     // Forbid certain props on DOM Nodes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-dom-props.md
-    'react/forbid-dom-props': ['off', { forbid: [] }],
+    'react/forbid-dom-props': ['warn', { forbid: [] }],
 
     // Forbid certain elements
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-elements.md
@@ -166,10 +166,9 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-typos.md
     'react/no-typos': 'error',
 
-    // TODO: enable this rule later when will be released?
     // Prevent this from being used in stateless functional components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md
-    // 'react/no-this-in-sfc': 'error',
+    'react/no-this-in-sfc': 'error',
 
     // Prevent invalid characters from appearing in markup
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
@@ -381,6 +380,10 @@ module.exports = {
       }
     ],
 
+    // Enforce defaultProps declarations alphabetical sorting
+    // https://github.com/yannickcr/eslint-plugin-react/blob/v7.6.1/docs/rules/jsx-sort-default-props.md
+    'react/jsx-sort-default-props': ['warn', { ignoreCase: true }],
+
     // Enforce props alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     'react/jsx-sort-props': [
@@ -407,6 +410,7 @@ module.exports = {
       {
         closingSlash: 'never',
         beforeSelfClosing: 'always',
+        beforeClosing: 'never',
         afterOpening: 'never'
       }
     ],

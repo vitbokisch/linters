@@ -16,7 +16,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "eslint-plugin-jsx-a11y": "^6.0.0"
+    "eslint-plugin-jsx-a11y": "^6.0.3"
   },
   "peerDependencies": {
     "eslint": "*"

@@ -16,7 +16,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.5.0"
+    "eslint-plugin-react": "^7.6.1"
   },
   "peerDependencies": {
     "eslint": "*"
