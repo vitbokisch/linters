@@ -1,6 +1,6 @@
 {
   "name": "@vitbokisch/eslint-config-react-native",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "React-Native eslint rules",
   "license": "MIT",
   "repository": "https://github.com/vitbokisch/linters/tree/master/packages/eslint-config-react-native",

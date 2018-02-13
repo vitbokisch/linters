@@ -1,6 +1,6 @@
 {
   "name": "@vitbokisch/eslint-config-jsx-a11y",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Jsx a11y eslint rules",
   "license": "MIT",
   "repository": "https://github.com/vitbokisch/linters/tree/master/packages/eslint-config-jsx-a11y",
